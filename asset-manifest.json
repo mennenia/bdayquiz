@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/quiz/static/css/main.b5a6d08c.chunk.css",
+    "main.js": "/quiz/static/js/main.ab40ffcb.chunk.js",
+    "main.js.map": "/quiz/static/js/main.ab40ffcb.chunk.js.map",
+    "runtime-main.js": "/quiz/static/js/runtime-main.6cf4e4ab.js",
+    "runtime-main.js.map": "/quiz/static/js/runtime-main.6cf4e4ab.js.map",
+    "static/js/2.abbe919a.chunk.js": "/quiz/static/js/2.abbe919a.chunk.js",
+    "static/js/2.abbe919a.chunk.js.map": "/quiz/static/js/2.abbe919a.chunk.js.map",
+    "index.html": "/quiz/index.html",
+    "precache-manifest.0b63f011b422d7f79561b07fd2612b82.js": "/quiz/precache-manifest.0b63f011b422d7f79561b07fd2612b82.js",
+    "service-worker.js": "/quiz/service-worker.js",
+    "static/css/main.b5a6d08c.chunk.css.map": "/quiz/static/css/main.b5a6d08c.chunk.css.map",
+    "static/media/bond.jpeg": "/quiz/static/media/bond.b52f91a0.jpeg",
+    "static/media/intro.jpeg": "/quiz/static/media/intro.d47930a5.jpeg",
+    "static/media/logo.svg": "/quiz/static/media/logo.25bf045c.svg",
+    "static/media/worrall.jpeg": "/quiz/static/media/worrall.84e4dfb0.jpeg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6cf4e4ab.js",
+    "static/js/2.abbe919a.chunk.js",
+    "static/css/main.b5a6d08c.chunk.css",
+    "static/js/main.ab40ffcb.chunk.js"
+  ]
+}
