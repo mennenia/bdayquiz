@@ -27,8 +27,8 @@ export const QuizOverview = ({ thing }) => {
       <animated.div style={{ ...style }}>
         <div
           style={{
-            width: "100vh",
-            height: "100vh",
+            width: "100%",
+            height: "100%",
             display: "flex",
             alignItems: "center",
             justifyContent: "center"
@@ -513,7 +513,7 @@ const QuestionCard = ({
           display: "flex",
           flexDirection: "column",
           padding: 16,
-          width: isLaptopOrTablet ? 480 : null,
+          width: isLaptopOrTablet ? 480 : "100%",
           margin: isLaptopOrTablet ? null : 24
         }}
       >
