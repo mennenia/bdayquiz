@@ -28,7 +28,7 @@ export const QuizOverview = ({ thing }) => {
         <div
           style={{
             width: "100%",
-            height: "100%",
+            height: "100vh",
             display: "flex",
             alignItems: "center",
             justifyContent: "center"
@@ -259,7 +259,7 @@ export const QuizOverview = ({ thing }) => {
       <animated.div style={{ ...style }}>
         <div
           style={{
-            width: "100vh",
+            width: "100%",
             height: "100vh",
             display: "flex",
             alignItems: "center",
@@ -279,9 +279,8 @@ export const QuizOverview = ({ thing }) => {
                 src={bondimg}
                 alt={"bond"}
                 style={{
-                  width: isLaptopOrTablet ? "60%" : null,
-                  objectFit: "contain",
-                  margin: isLaptopOrTablet ? null : 24
+                  width: isLaptopOrTablet ? "60%" : "100%",
+                  objectFit: "contain"
                 }}
               />
               <div
@@ -302,7 +301,7 @@ export const QuizOverview = ({ thing }) => {
                     color: "#131313",
                     fontSize: isLaptopOrTablet ? 16 : 14,
                     width: isLaptopOrTablet ? 540 : null,
-                    margin: isLaptopOrTablet ? null : 24,
+                    padding: isLaptopOrTablet ? null : 12,
                     textAlign: "left",
                     lineHeight: "140%",
                     opacity: 0.6
@@ -324,6 +323,8 @@ export const QuizOverview = ({ thing }) => {
           ) : (
             <div
               style={{
+                width: "100%",
+                height: "100vh",
                 display: "flex",
                 justifyContent: "center",
                 alignItems: "center",
@@ -334,9 +335,8 @@ export const QuizOverview = ({ thing }) => {
                 src={worrallimg}
                 alt={"worrall"}
                 style={{
-                  width: isLaptopOrTablet ? "60%" : null,
-                  objectFit: "contain",
-                  margin: isLaptopOrTablet ? null : 2
+                  width: isLaptopOrTablet ? "60%" : "100%",
+                  objectFit: "contain"
                 }}
               />
               <div
@@ -357,7 +357,7 @@ export const QuizOverview = ({ thing }) => {
                     color: "#131313",
                     fontSize: isLaptopOrTablet ? 16 : 14,
                     width: isLaptopOrTablet ? 540 : null,
-                    margin: isLaptopOrTablet ? null : 24,
+                    padding: isLaptopOrTablet ? null : 12,
                     textAlign: "left",
                     lineHeight: "140%",
                     opacity: 0.6
@@ -501,11 +501,11 @@ const QuestionCard = ({
   return (
     <div
       style={{
-        width: "100vh",
+        width: "100%",
         height: "100vh",
         display: "flex",
-        alignItems: "center",
-        justifyContent: "center"
+        justifyContent: isLaptopOrTablet ? "center" : "flex-start",
+        alignItems: "center"
       }}
     >
       <div
@@ -514,7 +514,7 @@ const QuestionCard = ({
           flexDirection: "column",
           padding: 16,
           width: isLaptopOrTablet ? 480 : "100%",
-          margin: isLaptopOrTablet ? null : 24
+          margin: isLaptopOrTablet ? null : 12
         }}
       >
         <div>
