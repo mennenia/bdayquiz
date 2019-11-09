@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "7f2e30abe7fa643888ee8b3bdc48a759",
+    "revision": "e59f685352577c4eb7f2b0823e168e4e",
     "url": "/bdayquiz/index.html"
   },
   {
-    "revision": "863137c015451be197f2",
-    "url": "/bdayquiz/static/css/main.da0235c0.chunk.css"
+    "revision": "4526dab66bf545afd32c",
+    "url": "/bdayquiz/static/css/main.5bb0900b.chunk.css"
   },
   {
     "revision": "0e0a0a013c616e3b24d1",
     "url": "/bdayquiz/static/js/2.47f94cda.chunk.js"
   },
   {
-    "revision": "863137c015451be197f2",
-    "url": "/bdayquiz/static/js/main.cd1c4c8c.chunk.js"
+    "revision": "4526dab66bf545afd32c",
+    "url": "/bdayquiz/static/js/main.9431042d.chunk.js"
   },
   {
     "revision": "55ee1d608f4bb8c51e15",

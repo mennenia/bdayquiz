@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/bdayquiz/static/css/main.da0235c0.chunk.css",
-    "main.js": "/bdayquiz/static/js/main.cd1c4c8c.chunk.js",
-    "main.js.map": "/bdayquiz/static/js/main.cd1c4c8c.chunk.js.map",
+    "main.css": "/bdayquiz/static/css/main.5bb0900b.chunk.css",
+    "main.js": "/bdayquiz/static/js/main.9431042d.chunk.js",
+    "main.js.map": "/bdayquiz/static/js/main.9431042d.chunk.js.map",
     "runtime-main.js": "/bdayquiz/static/js/runtime-main.443ed4be.js",
     "runtime-main.js.map": "/bdayquiz/static/js/runtime-main.443ed4be.js.map",
     "static/js/2.47f94cda.chunk.js": "/bdayquiz/static/js/2.47f94cda.chunk.js",
     "static/js/2.47f94cda.chunk.js.map": "/bdayquiz/static/js/2.47f94cda.chunk.js.map",
     "index.html": "/bdayquiz/index.html",
-    "precache-manifest.67584d7bb77e09e8f07b7ee20df73c20.js": "/bdayquiz/precache-manifest.67584d7bb77e09e8f07b7ee20df73c20.js",
+    "precache-manifest.3ed667857e364d80c3387d0103bd788a.js": "/bdayquiz/precache-manifest.3ed667857e364d80c3387d0103bd788a.js",
     "service-worker.js": "/bdayquiz/service-worker.js",
-    "static/css/main.da0235c0.chunk.css.map": "/bdayquiz/static/css/main.da0235c0.chunk.css.map",
+    "static/css/main.5bb0900b.chunk.css.map": "/bdayquiz/static/css/main.5bb0900b.chunk.css.map",
     "static/media/bond.jpeg": "/bdayquiz/static/media/bond.b52f91a0.jpeg",
     "static/media/intro.jpeg": "/bdayquiz/static/media/intro.d47930a5.jpeg",
     "static/media/logo.svg": "/bdayquiz/static/media/logo.25bf045c.svg",
@@ -19,7 +19,7 @@
   "entrypoints": [
     "static/js/runtime-main.443ed4be.js",
     "static/js/2.47f94cda.chunk.js",
-    "static/css/main.da0235c0.chunk.css",
-    "static/js/main.cd1c4c8c.chunk.js"
+    "static/css/main.5bb0900b.chunk.css",
+    "static/js/main.9431042d.chunk.js"
   ]
 }
