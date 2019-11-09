@@ -12,9 +12,15 @@ import worrallimg from "./worrall.jpeg";
 
 import { animated, useTransition } from "react-spring";
 
+import { useMediaQuery } from "react-responsive";
+
 export const QuizOverview = ({ thing }) => {
   const [bond, setBond] = useState(0);
   const [worrall, setWorrall] = useState(0);
+
+  const isLaptopOrTablet = useMediaQuery({
+    query: "(min-device-width: 768px)"
+  });
 
   const pages = [
     ({ style }) => (
@@ -31,7 +37,7 @@ export const QuizOverview = ({ thing }) => {
             onClick();
           }}
         >
-          <img src={intro} style={{ width: "100%" }} />
+          <img src={intro} style={{ width: "100%", objectFit: "contain" }} />
           {/* Let's get started */}
         </div>
       </animated.div>
@@ -97,7 +103,7 @@ export const QuizOverview = ({ thing }) => {
       <animated.div style={{ ...style }}>
         <QuestionCard
           question={"Your preferred sound is: "}
-          answerA={"The shaking of a martinie"}
+          answerA={"The shaking of a martini"}
           answerB={"A good drum solo"}
           answerC={"The revving engine of an Aston Martin"}
           answerD={"Crocodiles enjoying lunch that isn’t you"}
@@ -269,7 +275,15 @@ export const QuizOverview = ({ thing }) => {
                 flexDirection: "column"
               }}
             >
-              <img src={bondimg} alt={"bond"} style={{ width: "60%" }} />
+              <img
+                src={bondimg}
+                alt={"bond"}
+                style={{
+                  width: isLaptopOrTablet ? "60%" : null,
+                  objectFit: "contain",
+                  margin: isLaptopOrTablet ? null : 24
+                }}
+              />
               <div
                 style={{
                   marginTop: 16,
@@ -286,8 +300,9 @@ export const QuizOverview = ({ thing }) => {
                 <div
                   style={{
                     color: "#131313",
-                    fontSize: 16,
-                    width: 540,
+                    fontSize: isLaptopOrTablet ? 16 : 14,
+                    width: isLaptopOrTablet ? 540 : null,
+                    margin: isLaptopOrTablet ? null : 24,
                     textAlign: "left",
                     lineHeight: "140%",
                     opacity: 0.6
@@ -315,7 +330,15 @@ export const QuizOverview = ({ thing }) => {
                 flexDirection: "column"
               }}
             >
-              <img src={worrallimg} alt={"worrall"} style={{ width: "60%" }} />
+              <img
+                src={worrallimg}
+                alt={"worrall"}
+                style={{
+                  width: isLaptopOrTablet ? "60%" : null,
+                  objectFit: "contain",
+                  margin: isLaptopOrTablet ? null : 2
+                }}
+              />
               <div
                 style={{
                   marginTop: 16,
@@ -332,8 +355,9 @@ export const QuizOverview = ({ thing }) => {
                 <div
                   style={{
                     color: "#131313",
-                    fontSize: 16,
-                    width: 540,
+                    fontSize: isLaptopOrTablet ? 16 : 14,
+                    width: isLaptopOrTablet ? 540 : null,
+                    margin: isLaptopOrTablet ? null : 24,
                     textAlign: "left",
                     lineHeight: "140%",
                     opacity: 0.6
@@ -348,7 +372,7 @@ export const QuizOverview = ({ thing }) => {
                   self and are still partial to drumming along to most songs.
                   BIC pens are particularly good for that, though they often end
                   up strewn across the house and your loved ons fear for ink
-                  stains daily If need be, you sandwich a heavy workday with a
+                  stains daily. If need be, you sandwich a heavy workday with a
                   Red Bull and a beer. Mojitos are reserved for party time. No
                   gin though. Never gin.
                 </div>
@@ -380,13 +404,28 @@ export const QuizOverview = ({ thing }) => {
 };
 
 const Question = ({ text }) => {
+  const isLaptopOrTablet = useMediaQuery({
+    query: "(min-device-width: 768px)"
+  });
   return (
-    <p style={{ fontSize: 18, textAlign: "left", color: "#131313" }}>{text}</p>
+    <p
+      style={{
+        fontSize: isLaptopOrTablet ? 18 : 14,
+        textAlign: "left",
+        color: "#131313"
+      }}
+    >
+      {text}
+    </p>
   );
 };
 
 const Answer = ({ letter, text, submitCallback }) => {
   const [hoverRef, isHovered] = useHover();
+
+  const isLaptopOrTablet = useMediaQuery({
+    query: "(min-device-width: 768px)"
+  });
 
   return (
     <div
@@ -425,7 +464,7 @@ const Answer = ({ letter, text, submitCallback }) => {
           padding: 4,
           margin: 4,
           opacity: 0.5,
-          fontSize: 18,
+          fontSize: isLaptopOrTablet ? 18 : 14,
           textAlign: "left",
           color: "white"
         }}
@@ -433,7 +472,13 @@ const Answer = ({ letter, text, submitCallback }) => {
         {letter}
       </div>
       <div>
-        <p style={{ fontSize: 18, textAlign: "left", color: "#131313" }}>
+        <p
+          style={{
+            fontSize: isLaptopOrTablet ? 18 : 14,
+            textAlign: "left",
+            color: "#131313"
+          }}
+        >
           {text}
         </p>
       </div>
@@ -449,6 +494,10 @@ const QuestionCard = ({
   answerD,
   submitCallback
 }) => {
+  const isLaptopOrTablet = useMediaQuery({
+    query: "(min-device-width: 768px)"
+  });
+
   return (
     <div
       style={{
@@ -464,7 +513,8 @@ const QuestionCard = ({
           display: "flex",
           flexDirection: "column",
           padding: 16,
-          width: 480
+          width: isLaptopOrTablet ? 480 : null,
+          margin: isLaptopOrTablet ? null : 24
         }}
       >
         <div>
